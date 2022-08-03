@@ -7,7 +7,9 @@ import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.support.ManagedArray;
+import org.springframework.test.annotation.Commit;
 
 import java.util.Optional;
 
@@ -15,7 +17,9 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class MemberServiceTest {
 
+    @Autowired
     MemberService memberService;
+    @Autowired
     MemoryMemberRepository memberRepository;
 
     @BeforeEach

@@ -15,10 +15,10 @@ public class MemoryMemberRepositootyTest {
     // 테스트는 독리적으로 실행되어야 한다.
     // 순서에 의존관계가 있는 것은 좋은 테스트가 아니다.
     // 메모리 DB의 직전 테스트 데이터를 삭제
-    @AfterEach
-    public void afterEach() {
-        repository.clearStore();
-    }
+//    @AfterEach
+//    public void afterEach() {
+//        repository.clearStore();
+//    }
 
     @Test
     public void save(){
